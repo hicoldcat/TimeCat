@@ -1,10 +1,12 @@
 import Vue from 'vue'
-import router from './routes.js'
+import router from './router/routes.js'
 
-import App from './components/App.vue'
+import './assets/less/index.less'
+import App from './App.vue'
+
 
 new Vue({
 	router,
 	template:'<App/>',
-	components: {App }
+	components: {App}
 }).$mount('#app')

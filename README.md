@@ -58,9 +58,11 @@ npm run build
 |-- screenshots                      // 项目截图
 |
 |-- src                              // 源码目录
-|   |-- assets                       //项目公共资源
+|   |-- assets                       // 项目公共资源
 |   |-- components                   // 组件库
-|   |-- router                       //路由文件
+|   |-- modules                      // 项目模块
+|   |-- router                       // 路由文件
+|   |-- service                      // Mock数据
 |   |-- store                        // vuex的状态管理
 |   |-- style                        // 各种样式文件
 |   |-- App.vue                      // 页面入口文件
