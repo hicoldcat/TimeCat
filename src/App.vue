@@ -2,13 +2,23 @@
 	<div class="root">
 		<div class="hello">Hello</div>
 		<div class="info icon-home">Welcome To My Applacation ！</div>
+		<v-header :title="title"></v-header>
 		<router-view></router-view>
 	</div>
 </template>
 
 <script>
+	import Header from 'components/header/Header.vue'
+
 	export default {
-		name: 'app'
+		data () {
+	    return {
+	      title: "此处留白"
+	    }
+	  },
+		components: {
+			"v-header": Header
+		}
 	}
 </script>
 
