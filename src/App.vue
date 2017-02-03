@@ -1,7 +1,5 @@
 <template>
 	<div class="root">
-		<div class="hello">Hello</div>
-		<div class="info icon-home">Welcome To My Applacation ！</div>
 		<v-header :title="title"></v-header>
 		<router-view></router-view>
 	</div>

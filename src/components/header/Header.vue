@@ -1,13 +1,13 @@
 <template>
   <header class="header">
-    <div class="switch">
-      <i class="icon-delicious"></i>
+    <div class="menu">
+      <i class="icon-diamond"></i>
     </div>
     <div class="title">
       <h1>{{title}}</h1>
     </div>
-    <div class="personal">
-      <i class="icon-user"></i>
+    <div class="write">
+      <i class="icon-quill"></i>
     </div>
   </header>
 </template>
@@ -37,7 +37,7 @@ export default {
     left:0;
     text-align: center;
     line-height: @header-height;
-    .switch {
+    .menu {
       flex: 0 0 @header-height;
       font-size: @icon-font-size;
     }
@@ -45,7 +45,7 @@ export default {
       flex: 1;
       font-size: @title-font-size;
     }
-    .personal {
+    .write {
       flex: 0 0 @header-height;
       font-size: @icon-font-size;
     }
