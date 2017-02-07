@@ -3,48 +3,33 @@
 var express = require('express')
 var apiRoutes = express.Router();
 
-const home = require('./mockdata/home.json');
-const momentlife = require('./mockdata/momentlife.json');
-const hearsensation = require('./mockdata/hearsensation.json');
-const meetyourself = require('./mockdata/meetyourself.json');
-const skipcharacter = require('./mockdata/skipcharacter.json');
+var home = require('./mockdata/home.json');
+var momentlife = require('./mockdata/momentlife.json');
+var hearsensation = require('./mockdata/hearsensation.json');
+var meetyourself = require('./mockdata/meetyourself.json');
+var skipcharacter = require('./mockdata/skipcharacter.json');
 
 
 apiRoutes.get('/home', function (req, res) {
-	res.json({
-		errno: 0,
-		data: home
-	});
+	res.json(home);
 });
 
 
 apiRoutes.get('/momentlife', function (req, res) {
-	res.json({
-		errno: 0,
-		data: momentlife
-	});
+	res.json(momentlife);
 });
 
 apiRoutes.get('/hearsensation', function (req, res) {
-	res.json({
-		errno: 0,
-		data: hearsensation
-	});
+	res.json(hearsensation);
 });
 
 apiRoutes.get('/meetyourself', function (req, res) {
-	res.json({
-		errno: 0,
-		data: meetyourself
-	});
+	res.json(meetyourself);
 });
 
 
 apiRoutes.get('/skipcharacter', function (req, res) {
-	res.json({
-		errno: 0,
-		data: skipcharacter
-	});
+	res.json(skipcharacter);
 });
 
 module.exports = apiRoutes;
