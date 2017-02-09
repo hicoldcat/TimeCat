@@ -6,7 +6,11 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 
 // 引入自定义单文件组件
-import MomentLife from 'components/momentlife/MomentLife'
+import Home from 'modules/home/Home'
+import MomentLife from 'modules/momentlife/MomentLife'
+import MeetYourself from 'modules/meetyourself/MeetYourself'
+import HearSensation from 'modules/hearsensation/HearSensation'
+import CharacterSkip from 'modules/characterskip/CharacterSkip'
 
 // 注册插件
 Vue.use(VueRouter)
@@ -15,8 +19,28 @@ Vue.use(Vuex)
 // 配置routes
 const routes = [
   {
+    path: '/home',
+    component:Home
+  },
+  {
     path: '/momentlife',
     component:MomentLife
+  },
+  {
+    path: '/meetyourself',
+    component:MeetYourself
+  },
+  {
+    path: '/hearsensation',
+    component:HearSensation
+  },
+  {
+    path: '/characterskip',
+    component:CharacterSkip
+  },
+  {
+    path: '/',
+    component:Home
   }
 ]
 
