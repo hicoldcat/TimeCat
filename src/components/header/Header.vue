@@ -26,17 +26,18 @@ export default {
   @header-height:46px;
   @icon-font-size:22px;
   @title-font-size: 18px;
+  @baseBorderColor:#3B3B3B;
 
   .header {
-    position: absolute;
+    position: relative;;
     display: flex;
     width: 100%;
     height: @header-height;
-    background: #e8e8e8;
-    top:0;
-    left:0;
+    background: #fff;
     text-align: center;
     line-height: @header-height;
+    border-bottom: 1px solid @baseBorderColor;
+    box-shadow: 0 2px 10px #D8D8D8;
     .menu {
       flex: 0 0 @header-height;
       font-size: @icon-font-size;
