@@ -1,18 +1,18 @@
 <template>
-<div class="momentlife">
+<div class="info">
   <div class="box">
     <div class="pic">
-      <img :src="momentlife.pic" alt="">
+      <img :src="info.pic" alt="">
     </div>
     <div class="destination">
-      {{momentlife.description}}
+      {{info.description}}
     </div>
     <div class="owner">
       <div class="avatar">
-        <img :src="momentlife.avatar" alt="">
+        <img :src="info.avatar" alt="">
       </div>
       <div class="name">
-        {{momentlife.nickname}}
+        {{info.nickname}}
       </div>
     </div>
   </div>
@@ -20,34 +20,13 @@
 </template>
 
 <script>
-import axios from 'axios'
-
-const ERR_OK = 0
-
 export default {
-  data() {
-    return {
-      momentlife: []
-    }
-  },
   props: {
-    MomentLife: {
+    info: {
       type: Object
     }
-  },
-  created() {
-    axios.get('/api/momentlife').then((res) => {
-      console.info(res)
-      res = res.data
-      console.info(res)
-      if (res.errno === ERR_OK) {
-        this.momentlife = res.data
-      }
-      console.info(this.momentlife)
-    }).catch((error) => {
-      console.warn(error)
-    })
   }
+
 }
 </script>
 
@@ -63,7 +42,7 @@ export default {
 @baseBackgroundColor:#fff;
 @baseBorderColor:#3B3B3B;
 
-.momentlife {
+.info {
     position: relative;
     width: 100%;
     background-color: #fff;
