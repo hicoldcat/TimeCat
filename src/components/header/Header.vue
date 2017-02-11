@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="menu">
+    <div class="menu" @click="goNextPage">
       <i class="icon-diamond"></i>
     </div>
     <div class="title">
@@ -13,10 +13,22 @@
 </template>
 
 <script>
+import VueRouter from '../../router/routes.js'
+
 export default {
   props: {
     title: {
       type: String
+    },
+    nextpage: {
+      type: String
+    }
+  },
+  methods: {
+    goNextPage () {
+      if(this.nextpage) {
+        VueRouter.push({ path: '/'+this.nextpage })
+      }
     }
   }
 }

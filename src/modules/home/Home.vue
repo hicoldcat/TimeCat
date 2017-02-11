@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-header :title="title"></v-header>
+    <v-header :title="title" :nextpage="nextPage"></v-header>
     <div class="info-container" v-for="item in homelist">
       <info :info="item" class="info"></info>
     </div>
@@ -19,18 +19,16 @@ export default {
   data () {
     return {
       title: "此处留白",
+      nextPage:"momentlife",
       homelist: []
     }
   },
   created() {
     axios.get('/api/home').then((res) => {
-      console.info(res)
       res = res.data
-      console.info(res)
       if (res.errno === ERR_OK) {
         this.homelist = res.data
       }
-      console.info(this.homelist)
     }).catch((error) => {
       console.warn(error)
     })
