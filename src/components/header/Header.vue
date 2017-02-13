@@ -4,7 +4,7 @@
       <i class="icon-diamond"></i>
     </div>
     <div class="title">
-      <h1>{{title}}</h1>
+      <h1>{{headertitle}}</h1>
     </div>
     <div class="write">
       <i class="icon-quill"></i>
@@ -14,6 +14,7 @@
 
 <script>
 import VueRouter from '../../router/routes.js'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   props: {
@@ -24,12 +25,13 @@ export default {
       type: String
     }
   },
+  computed: mapGetters({
+    headertitle: 'headerTitle'
+  }),
   methods: {
     goNextPage () {
-      if(this.nextpage) {
-        VueRouter.push({ path: '/'+this.nextpage })
-      }
-    }
+      this.$store.dispatch('geNextPage',{nextpage:this.nextpage})
+    },
   }
 }
 </script>
