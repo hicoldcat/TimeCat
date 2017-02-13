@@ -1,6 +1,6 @@
 <template>
   <div class="momentlife">
-    <v-header :title="title" :nextpage="nextPage"></v-header>
+    <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
     <h1>MomentLife Modules</h1>
   </div>
 </template>
@@ -15,7 +15,7 @@ const ERR_OK = 0
 export default {
   data () {
     return {
-      title: "片刻留白",
+      nextTitle: "主页留白",
       nextPage:"home"
     }
   },

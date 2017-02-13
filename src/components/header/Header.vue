@@ -18,10 +18,10 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   props: {
-    title: {
+    nextTitle: {
       type: String
     },
-    nextpage: {
+    nextPage: {
       type: String
     }
   },
@@ -30,7 +30,7 @@ export default {
   }),
   methods: {
     goNextPage () {
-      this.$store.dispatch('geNextPage',{nextpage:this.nextpage})
+      this.$store.dispatch('updatePage',{nextPage:this.nextPage,nextTitle:this.nextTitle})
     },
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-header :title="title" :nextpage="nextPage"></v-header>
+    <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
     <div class="info-container" v-for="item in homelist">
       <info :info="item" class="info"></info>
     </div>
@@ -18,7 +18,7 @@ const ERR_OK = 0
 export default {
   data () {
     return {
-      title: "此处留白",
+      nextTitle: "片刻留白",
       nextPage:"momentlife",
       homelist: []
     }
