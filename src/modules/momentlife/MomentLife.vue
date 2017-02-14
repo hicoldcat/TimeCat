@@ -2,6 +2,7 @@
   <div class="momentlife">
     <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
     <h1>MomentLife Modules</h1>
+    <h1>片刻留白 生活状态！</h1>
   </div>
 </template>
 
@@ -15,19 +16,19 @@ const ERR_OK = 0
 export default {
   data () {
     return {
-      nextTitle: "主页留白",
-      nextPage:"home"
+      nextTitle: "回音留白",
+      nextPage:"hearsensation"
     }
   },
   created() {
-    axios.get('/api/momentlife').then((res) => {
-      res = res.data
-      if (res.errno === ERR_OK) {
-        this.momentlife = res.data
-      }
-    }).catch((error) => {
-      console.warn(error)
-    })
+    // axios.get('/api/momentlife').then((res) => {
+    //   res = res.data
+    //   if (res.errno === ERR_OK) {
+    //     this.momentlife = res.data
+    //   }
+    // }).catch((error) => {
+    //   console.warn(error)
+    // })
   },
   components: {
     "v-header": Header
