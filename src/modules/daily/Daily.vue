@@ -1,7 +1,7 @@
 <template>
-  <div class="momentlife">
+  <div class="daily">
     <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
-    <h1>MomentLife Modules</h1>
+    <h1>daily Modules</h1>
     <h1>片刻留白 生活状态！</h1>
   </div>
 </template>
@@ -21,10 +21,10 @@ export default {
     }
   },
   created() {
-    // axios.get('/api/momentlife').then((res) => {
+    // axios.get('/api/daily').then((res) => {
     //   res = res.data
     //   if (res.errno === ERR_OK) {
-    //     this.momentlife = res.data
+    //     this.daily = res.data
     //   }
     // }).catch((error) => {
     //   console.warn(error)

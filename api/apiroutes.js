@@ -4,7 +4,7 @@ var express = require('express')
 var apiRoutes = express.Router();
 
 var home = require('./mockdata/home.json');
-var momentlife = require('./mockdata/momentlife.json');
+var daily = require('./mockdata/daily.json');
 var hearsensation = require('./mockdata/hearsensation.json');
 var meetyourself = require('./mockdata/meetyourself.json');
 var skipcharacter = require('./mockdata/skipcharacter.json');
@@ -15,8 +15,8 @@ apiRoutes.get('/home', function (req, res) {
 });
 
 
-apiRoutes.get('/momentlife', function (req, res) {
-	res.json(momentlife);
+apiRoutes.get('/daily', function (req, res) {
+	res.json(daily);
 });
 
 apiRoutes.get('/hearsensation', function (req, res) {

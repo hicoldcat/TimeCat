@@ -7,7 +7,7 @@ import Vuex from 'vuex'
 
 // 引入自定义单文件组件
 import Home from 'modules/home/Home'
-import MomentLife from 'modules/momentlife/MomentLife'
+import daily from 'modules/daily/Daily'
 import MeetYourself from 'modules/meetyourself/MeetYourself'
 import HearSensation from 'modules/hearsensation/HearSensation'
 import CharacterSkip from 'modules/characterskip/CharacterSkip'
@@ -23,8 +23,8 @@ const routes = [
     component:Home
   },
   {
-    path: '/momentlife',
-    component:MomentLife
+    path: '/daily',
+    component:daily
   },
   {
     path: '/meetyourself',

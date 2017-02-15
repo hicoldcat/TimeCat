@@ -3,8 +3,8 @@
   "data": [
     {
       "id":9001,
-      "type": "momentlife",
-      "themeId": "momentlife",
+      "type": "daily",
+      "themeId": "daily",
       "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_QCivaWCX.jpg",
       "description": "一花一世界，一鸟一天堂",
       "nickname": "李留白",
@@ -21,8 +21,8 @@
     },
     {
       "id":9002,
-      "type": "momentlife",
-      "themeId": "momentlife",
+      "type": "daily",
+      "themeId": "daily",
       "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_WNRvtyWH.jpg",
       "description": "执子之手，与子偕老",
       "nickname": "扫地僧",

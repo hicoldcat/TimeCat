@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       nextTitle: "片刻留白",
-      nextPage:"momentlife",
+      nextPage:"daily",
       homelist: []
     }
   },
