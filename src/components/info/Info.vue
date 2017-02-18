@@ -4,8 +4,8 @@
     <div class="pic">
       <img :src="info.pic" alt="">
     </div>
-    <div class="destination">
-      {{info.description}}
+    <div class="desc">
+      {{info.desc}}
     </div>
     <div class="owner">
       <div class="avatar">
@@ -65,7 +65,7 @@ export default {
           width: 100%;
         }
 
-        .destination {
+        .desc {
           font-size: 16px;
           font-weight: 400;
           font-family: fangzheng;
