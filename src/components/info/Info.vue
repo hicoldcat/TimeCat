@@ -7,12 +7,23 @@
     <div class="desc">
       {{info.desc}}
     </div>
-    <div class="owner">
-      <div class="avatar">
-        <img :src="info.avatar" alt="">
+    <div class="bottom">
+      <div class="time">
+        <div class="day">
+          Feb.02
+        </div>
+        <div class="year">
+          2017
+        </div>
+        <div class="plus">+</div>
       </div>
-      <div class="name">
-        {{info.nickname}}
+      <div class="owner">
+        <div class="avatar">
+          <img :src="info.avatar" alt="">
+        </div>
+        <div class="name">
+          {{info.nickname}}
+        </div>
       </div>
     </div>
   </div>
@@ -54,7 +65,6 @@ export default {
         margin: 0 auto;
         border: 1px solid @baseBorderColor;
         margin: 0 auto;
-        padding-bottom: 70px;
 
         .pic {
           width: 94%;
@@ -69,38 +79,60 @@ export default {
           font-size: 16px;
           font-weight: 400;
           font-family: fangzheng;
-          margin: 0 auto 0 3%;
+          margin:3%;
           padding: 5% 0;
           width: 80%;
         }
 
-        .owner {
+        .bottom{
+          margin: 3%;
           display: flex;
-          justify-content:space-between;
-          flex-direction: column;
-          align-items: center;
-          position: absolute;
-          width: 20%;
-          right: 3%;
-          bottom: 15px;
+          justify-content: space-between;
+          align-items: flex-end;
 
-          .avatar {
+          .owner {
+            flex: 0 0 20%;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: bottom;
+
+            .avatar img{
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              margin: 0 auto;
+            }
+
+            .name {
+              line-height: 40px;
+              height: 40px;
+              font-size: 16px;
+              text-align: center;
+              font-family: fangzheng;
+              align-self: center;
+            }
           }
 
-          .avatar img{
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-          }
+          .time {
+            flex: 0 0 20%;
+            display: inline-block;
+            border: 1px solid #B7B7B7;
+            color: #B7B7B7;
+            padding: 2px;
+            width: 20%;
+            height: 82px;
+            line-height: 20px;
 
-          .name {
-            line-height: 40px;
-            height: 40px;
-            font-size: 16px;
-            text-align: center;
-            font-family: fangzheng;
+            .plus{
+              position: absolute;
+              bottom: 20px;
+              font-size: 20px;
+            }
           }
         }
+
+
     }
 }
 </style>
