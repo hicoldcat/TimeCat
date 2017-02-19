@@ -11,10 +11,10 @@
     </div>
     <div class="owner">
       <div class="avatar">
-        <img :src="info.avatar" alt="">
+        <img :src="avatar" alt="">
       </div>
       <div class="name">
-        {{info.nickname}}
+        {{nickname}}
       </div>
     </div>
   </div>
@@ -23,9 +23,15 @@
 <script>
 export default {
   props: {
-    info: {
-      type: Object
-    }
+    time: {
+      type: String
+    },
+    avatar: {
+      type: String
+    },
+    nickname: {
+      type: String
+    },
   }
 }
 </script>

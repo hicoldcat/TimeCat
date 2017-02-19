@@ -7,7 +7,7 @@
     <div class="desc">
       {{info.desc}}
     </div>
-    <bottom-bar :info="info"></bottom-bar>
+    <bottom-bar :nickname="info.nickname" :avatar="info.avatar" :time="info.time"></bottom-bar>
   </div>
 </div>
 </template>
