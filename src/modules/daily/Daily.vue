@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       nextTitle: "回音留白",
-      nextPage:"hearsensation",
+      nextPage:"vocality",
       dailylist:[]
     }
   },

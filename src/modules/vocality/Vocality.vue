@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
-    <h1>HearSensation Modules</h1>
+    <h1>Vocality Modules</h1>
     <h1>回音留白  音乐！！！</h1>
   </div>
 </template>

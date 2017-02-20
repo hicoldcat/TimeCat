@@ -9,7 +9,7 @@ import Vuex from 'vuex'
 import Home from 'modules/home/Home'
 import daily from 'modules/daily/Daily'
 import MeetYourself from 'modules/meetyourself/MeetYourself'
-import HearSensation from 'modules/hearsensation/HearSensation'
+import Vocality from 'modules/vocality/Vocality'
 import CharacterSkip from 'modules/characterskip/CharacterSkip'
 
 // 注册插件
@@ -31,8 +31,8 @@ const routes = [
     component:MeetYourself
   },
   {
-    path: '/hearsensation',
-    component:HearSensation
+    path: '/vocality',
+    component:Vocality
   },
   {
     path: '/characterskip',
