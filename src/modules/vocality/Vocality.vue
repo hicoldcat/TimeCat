@@ -1,8 +1,9 @@
 <template>
-  <div class="">
+  <div class="vocality">
     <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
-    <h1>Vocality Modules</h1>
-    <h1>回音留白  音乐！！！</h1>
+    <div class="music-container" v-for="item in musiclist">
+      <music :music="item" class="music"></music>
+    </div>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import axios from 'axios'
 
 import Header from 'components/header/Header.vue'
+import Music from 'components/music/Music.vue'
 
 const ERR_OK = 0
 
@@ -17,23 +19,30 @@ export default {
   data () {
     return {
       nextTitle: "半步留白",
-      nextPage:"meetyourself"
+      nextPage:"meetyourself",
+      musiclist:[]
     }
   },
   created() {
-    // axios.get('/api/meetyourself').then((res) => {
-    //   res = res.data
-    //   if (res.errno === ERR_OK) {
-    //     this.meetyourself = res.data
-    //   }
-    // }).catch((error) => {
-    //   console.warn(error)
-    // })
+    axios.get('/api/vocality').then((res) => {
+      res = res.data
+      if (res.errno === ERR_OK) {
+        this.musiclist = res.data
+      }
+    }).catch((error) => {
+      console.warn(error)
+    })
   },
   components: {
-    "v-header": Header
+    "v-header": Header,
+    "music": Music
   }}
 </script>
 
 <style lang="less">
+  .vocality {
+    .music{
+      margin: 20px 0;
+    }
+  }
 </style>
