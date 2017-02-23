@@ -4,7 +4,7 @@
       <div class="pic">
         <img :src="music.pic" alt="">
       </div>
-      <music-bar></music-bar>
+      <music-bar :musicurl="music.musicurl" :imgurl="music.imgurl" :singer="music.singer" :songname="music.songname"></music-bar>
       <bottom-bar :nickname="music.nickname" :avatar="music.avatar" :time="music.time"></bottom-bar>
     </div>
   </div>
