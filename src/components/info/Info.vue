@@ -1,9 +1,10 @@
 <template>
 <div class="info">
   <div class="box">
-    <div class="pic">
+    <!-- <div class="pic">
       <img :src="info.pic" alt="">
-    </div>
+    </div> -->
+    <pic-box :src="info.pic"></pic-box>
     <div class="desc">
       {{info.desc}}
     </div>
@@ -14,6 +15,7 @@
 
 <script>
 import BottomBar from 'components/bottombar/BottomBar'
+import PicBox from 'components/picbox/PicBox'
 
 export default {
   props: {
@@ -22,7 +24,8 @@ export default {
     }
   },
   components: {
-    "bottom-bar": BottomBar
+    "bottom-bar": BottomBar,
+    "pic-box":PicBox
   }
 }
 </script>

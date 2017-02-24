@@ -1,9 +1,7 @@
 <template>
   <div class="music">
     <div class="box">
-      <div class="pic">
-        <img :src="music.pic" alt="">
-      </div>
+      <pic-box :src="music.pic"></pic-box>
       <music-bar :musicurl="music.musicurl" :imgurl="music.imgurl" :singer="music.singer" :songname="music.songname"></music-bar>
       <bottom-bar :nickname="music.nickname" :avatar="music.avatar" :time="music.time"></bottom-bar>
     </div>
@@ -13,6 +11,7 @@
 <script>
 import BottomBar from 'components/bottombar/BottomBar'
 import MusicBar from 'components/musicbar/MusicBar'
+import PicBox from 'components/picbox/PicBox'
 
 export default {
   props: {
@@ -22,7 +21,8 @@ export default {
   },
   components: {
     "bottom-bar": BottomBar,
-    "music-bar": MusicBar
+    "music-bar": MusicBar,
+    "pic-box": PicBox
   }
 }
 </script>
