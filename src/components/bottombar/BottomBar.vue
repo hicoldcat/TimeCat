@@ -37,6 +37,13 @@ export default {
 </script>
 
 <style lang="less">
+@font-face {
+  font-family: 'fangzheng';
+  src:  url('../../../static/fonts/fangzheng.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
   .bottom{
     margin: 3%;
     display: flex;

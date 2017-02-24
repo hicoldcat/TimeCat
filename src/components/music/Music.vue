@@ -28,13 +28,6 @@ export default {
 </script>
 
 <style lang="less">
-@font-face {
-  font-family: 'fangzheng';
-  src:  url('../../../static/fonts/fangzheng.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @baseBackgroundColor:#fff;
 @baseBorderColor:#3B3B3B;
 
@@ -50,15 +43,6 @@ export default {
     margin: 0 auto;
     border: 1px solid @baseBorderColor;
     margin: 0 auto;
-  }
-
-  .pic {
-    width: 94%;
-    margin: 3%;
-  }
-
-  .pic img{
-    width: 100%;
   }
 }
 </style>
