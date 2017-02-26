@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h1>CharacterSkip Modules</h1>
+    <h1>Article Modules</h1>
   </div>
 </template>
 

@@ -10,7 +10,7 @@ import Home from 'modules/home/Home'
 import daily from 'modules/daily/Daily'
 import MeetYourself from 'modules/meetyourself/MeetYourself'
 import Vocality from 'modules/vocality/Vocality'
-import CharacterSkip from 'modules/characterskip/CharacterSkip'
+import Essay from 'modules/essay/Essay'
 
 // 注册插件
 Vue.use(VueRouter)
@@ -35,8 +35,8 @@ const routes = [
     component:Vocality
   },
   {
-    path: '/characterskip',
-    component:CharacterSkip
+    path: '/essay',
+    component:Essay
   },
   {
     path: '/',
