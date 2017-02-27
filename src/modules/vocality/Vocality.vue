@@ -18,8 +18,8 @@ const ERR_OK = 0
 export default {
   data () {
     return {
-      nextTitle: "半步留白",
-      nextPage:"meetyourself",
+      nextTitle: "字符留白",
+      nextPage:"essay",
       musiclist:[]
     }
   },
