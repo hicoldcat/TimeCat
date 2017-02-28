@@ -29,7 +29,7 @@ export default {
 
 <style lang="less">
 @baseBackgroundColor:#fff;
-@baseBorderColor:#3B3B3B;
+@baseBorderColor:#d1dbe5;
 
 .music {
   position: relative;

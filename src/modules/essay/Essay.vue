@@ -2,7 +2,7 @@
   <div class="eassy">
     <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
     <div class="article-container" v-for="item in articlelist">
-      <article :article="item" class="article"></essay>
+      <v-article :article="item" class="articleitem"></v-article>
     </div>
   </div>
 </template>
@@ -35,14 +35,14 @@ export default {
   },
   components: {
     "v-header": Header,
-    "article": Article
+    "v-article": Article
   }
 }
 </script>
 
 <style lang="less">
-  .essay {
-    .article{
+  .eassy {
+    .articleitem{
       margin: 20px 0;
     }
   }

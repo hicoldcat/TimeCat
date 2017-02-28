@@ -7,7 +7,7 @@ var home = require('./mockdata/home.json');
 var daily = require('./mockdata/daily.json');
 var vocality = require('./mockdata/vocality.json');
 var meetyourself = require('./mockdata/meetyourself.json');
-var skipcharacter = require('./mockdata/skipcharacter.json');
+var essay = require('./mockdata/essay.json');
 
 
 apiRoutes.get('/home', function (req, res) {
@@ -28,8 +28,8 @@ apiRoutes.get('/meetyourself', function (req, res) {
 });
 
 
-apiRoutes.get('/skipcharacter', function (req, res) {
-	res.json(skipcharacter);
+apiRoutes.get('/essay', function (req, res) {
+	res.json(essay);
 });
 
 module.exports = apiRoutes;
