@@ -8,7 +8,7 @@ import Vuex from 'vuex'
 // 引入自定义单文件组件
 import Home from 'modules/home/Home'
 import daily from 'modules/daily/Daily'
-import MeetYourself from 'modules/meetyourself/MeetYourself'
+import Travels from 'modules/travels/Travels'
 import Vocality from 'modules/vocality/Vocality'
 import Essay from 'modules/essay/Essay'
 
@@ -27,8 +27,8 @@ const routes = [
     component:daily
   },
   {
-    path: '/meetyourself',
-    component:MeetYourself
+    path: '/travels',
+    component:Travels
   },
   {
     path: '/vocality',

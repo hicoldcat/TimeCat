@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
-    <h1>MeetYourself Modules</h1>
+    <h1>travels Modules</h1>
     <h1>半步留白 旅行！！</h1>
   </div>
 </template>
@@ -21,10 +21,10 @@ export default {
     }
   },
   created() {
-    // axios.get('/api/meetyourself').then((res) => {
+    // axios.get('/api/travels').then((res) => {
     //   res = res.data
     //   if (res.errno === ERR_OK) {
-    //     this.meetyourself = res.data
+    //     this.travelslist = res.data
     //   }
     // }).catch((error) => {
     //   console.warn(error)

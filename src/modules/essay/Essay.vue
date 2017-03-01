@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       nextTitle: "半步留白",
-      nextPage:"meetyourself",
+      nextPage:"travels",
       articlelist:[]
     }
   },
