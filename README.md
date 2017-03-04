@@ -94,6 +94,30 @@ npm run build
 
 > 简约 文艺 清新
 
+项目完成度
+----------
+
+> [√] 首页功能模块 -- 完成[2017-03-02]
+
+项目截图
+--------
+
+#### *【片刻留白】---每日分享模块[daily]*
+
+![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/daily.jpg?raw=true)
+
+#### *【回声留白】---音乐分享模块[vocality]*
+
+![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/vocality.jpg?raw=true)
+
+#### *【字符留白】---随笔分享模块[essay]*
+
+![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/essay.jpg?raw=true)
+
+#### *【半步留白】---游记分享模块[travels]*
+
+![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/travels.jpg?raw=true)
+
 贡献
 ----
 

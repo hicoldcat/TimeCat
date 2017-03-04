@@ -2,34 +2,6 @@
   "errno": 0,
   "data": [
     {
-      "id":1001,
-      "userid":"u9001",
-      "nickname": "李留白",
-      "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
-      "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_QCivaWCX.jpg",
-      "musicurl":"http://fs.open.kugou.com/8d700a2ea354fd49db594123201723d4/58c10bc9/G003/M0A/1B/1D/o4YBAFS5KDqAZh0gAERvrKQpAZI992.mp3",
-      "singer":"汪峰",
-      "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20160426/20160426113231414.jpg",
-      "songname":"春天里",
-      "themeid": "daily",
-      "module": "daily",
-      "createtime":"1475164800000"
-    },
-    {
-      "id":1002,
-      "userid":"u9002",
-      "nickname": "扫地僧",
-      "avatar": "http://p1.wmpic.me/article/2017/03/06/1488768546_bdCSPuMc_215x185.jpg",
-      "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_WNRvtyWH.jpg",
-      "musicurl":"http://fs.open.kugou.com/024a8d8e0040226ffca973098fb0d76a/58c10e63/G088/M01/0F/1F/-IYBAFi6f4CAcJAcAEcSJ79L6vk233.mp3",
-      "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20161019/20161019112334107316.jpg",
-      "singer":"李健",
-      "songname":"异乡人",
-      "themeid": "daily",
-      "module": "daily",
-      "createtime":"1485914400000"
-    },
-    {
       "id":1003,
       "userid":"u9003",
       "nickname": "李留白",
@@ -56,6 +28,34 @@
       "themeid": "daily",
       "module": "daily",
       "createtime":"1493055500000"
+    },
+    {
+      "id":1001,
+      "userid":"u9001",
+      "nickname": "李留白",
+      "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
+      "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_QCivaWCX.jpg",
+      "musicurl":"http://fs.open.kugou.com/8d700a2ea354fd49db594123201723d4/58c10bc9/G003/M0A/1B/1D/o4YBAFS5KDqAZh0gAERvrKQpAZI992.mp3",
+      "singer":"汪峰",
+      "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20160426/20160426113231414.jpg",
+      "songname":"春天里",
+      "themeid": "daily",
+      "module": "daily",
+      "createtime":"1475164800000"
+    },
+    {
+      "id":1002,
+      "userid":"u9002",
+      "nickname": "扫地僧",
+      "avatar": "http://p1.wmpic.me/article/2017/03/06/1488768546_bdCSPuMc_215x185.jpg",
+      "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_WNRvtyWH.jpg",
+      "musicurl":"http://fs.open.kugou.com/024a8d8e0040226ffca973098fb0d76a/58c10e63/G088/M01/0F/1F/-IYBAFi6f4CAcJAcAEcSJ79L6vk233.mp3",
+      "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20161019/20161019112334107316.jpg",
+      "singer":"李健",
+      "songname":"异乡人",
+      "themeid": "daily",
+      "module": "daily",
+      "createtime":"1485914400000"
     },
     {
       "id":1005,
