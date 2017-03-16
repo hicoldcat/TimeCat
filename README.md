@@ -60,7 +60,7 @@ npm run build
 |-- src                              // 源码目录
 |   |-- assets                       // 项目公共资源
 |   |-- components                   // 组件库
-|   |-- modules                      // 项目模块
+|   |-- pages                        // 项目页面模块
 |   |-- router                       // 路由文件
 |   |-- service                      // Mock数据
 |   |-- store                        // vuex的状态管理

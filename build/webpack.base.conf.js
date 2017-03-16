@@ -30,7 +30,7 @@ module.exports = {
       'src': resolve('src'),
       'assets': resolve('src/assets'),
       'components': resolve('src/components'),
-      'modules': resolve('src/modules')
+      'pages': resolve('src/pages')
     }
   },
   module: {

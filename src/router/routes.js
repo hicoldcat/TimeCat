@@ -6,11 +6,11 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 
 // 引入自定义单文件组件
-import Home from 'modules/home/Home'
-import daily from 'modules/daily/Daily'
-import Travels from 'modules/travels/Travels'
-import Vocality from 'modules/vocality/Vocality'
-import Essay from 'modules/essay/Essay'
+import Home from 'pages/home/Home'
+import daily from 'pages/daily/Daily'
+import Travels from 'pages/travels/Travels'
+import Vocality from 'pages/vocality/Vocality'
+import Essay from 'pages/essay/Essay'
 
 // 注册插件
 Vue.use(VueRouter)
