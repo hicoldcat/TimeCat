@@ -10,3 +10,11 @@ export const  updatePage = ({commit},payload) => {
     })
   }
 }
+
+export const  goPersonalPages = ({commit},payload) => {
+  if(payload.userId){
+    commit(types.GO_Personal_Pages,{
+      userId:payload.userId
+    })
+  }
+}

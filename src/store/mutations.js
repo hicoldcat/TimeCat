@@ -10,6 +10,11 @@ export default {
 
   [types.UPDATE_HEADER_TITLE](state, {nextTitle}) {
     state.headerTitle = nextTitle
+  },
+
+  [types.GO_Personal_Pages](state, {userId}) {
+    console.info("GO_Personal_Pages")
+    VueRouter.push({ name: 'personal', params: { userId: userId }})
   }
 
 }

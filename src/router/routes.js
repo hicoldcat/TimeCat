@@ -11,6 +11,7 @@ import daily from 'pages/daily/Daily'
 import Travels from 'pages/travels/Travels'
 import Vocality from 'pages/vocality/Vocality'
 import Essay from 'pages/essay/Essay'
+import Personal from 'pages/personal/Personal'
 
 // 注册插件
 Vue.use(VueRouter)
@@ -20,23 +21,33 @@ Vue.use(Vuex)
 const routes = [
   {
     path: '/home',
+    name: 'home',
     component:Home
   },
   {
     path: '/daily',
+    name: 'daily',
     component:daily
   },
   {
     path: '/travels',
+    name: 'travels',
     component:Travels
   },
   {
     path: '/vocality',
+    name: 'vocality',
     component:Vocality
   },
   {
     path: '/essay',
+    name: 'essay',
     component:Essay
+  },
+  {
+    path: '/personal',
+    name: 'personal',
+    component:Personal
   },
   {
     path: '/',

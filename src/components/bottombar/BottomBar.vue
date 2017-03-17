@@ -9,7 +9,7 @@
       </div>
       <div class="plus">+</div>
     </div>
-    <div class="owner">
+    <div class="owner" @click="goPersonalPages(userid)">
       <div class="avatar">
         <img :src="avatar" alt="">
       </div>
@@ -31,6 +31,16 @@ export default {
     },
     nickname: {
       type: String
+    },
+    userid: {
+      type: String
+    }
+  },
+  methods: {
+    goPersonalPages (data) {
+      if (data) {
+        this.$store.dispatch('goPersonalPages',{userId:data})
+      }
     },
   }
 }
