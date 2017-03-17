@@ -3,7 +3,7 @@
     <div class="box">
       <pic-box :src="music.pic"></pic-box>
       <music-bar :musicurl="music.musicurl" :imgurl="music.imgurl" :singer="music.singer" :songname="music.songname"></music-bar>
-      <bottom-bar :nickname="music.nickname" :avatar="music.avatar" :time="music.time"></bottom-bar>
+      <bottom-bar :nickname="music.nickname" :avatar="music.avatar" :time="music.time" :userid="music.userid"></bottom-bar>
     </div>
   </div>
 </template>

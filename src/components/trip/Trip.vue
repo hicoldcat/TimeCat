@@ -10,7 +10,7 @@
           {{trip.title}}
         </div>
       </div>
-      <bottom-bar :nickname="trip.nickname" :avatar="trip.avatar" :time="trip.time"></bottom-bar>
+      <bottom-bar :nickname="trip.nickname" :avatar="trip.avatar" :time="trip.time" :userid="trip.userid"></bottom-bar>
     </div>
   </div>
 </template>

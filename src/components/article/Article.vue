@@ -3,7 +3,7 @@
     <div class="box">
       <pic-box :src="article.pic"></pic-box>
       <div class="title">{{'「'+article.title+'」'}}</div>
-      <bottom-bar :nickname="article.nickname" :avatar="article.avatar" :time="article.time"></bottom-bar>
+      <bottom-bar :nickname="article.nickname" :avatar="article.avatar" :time="article.time" :userid="article.userid"></bottom-bar>
     </div>
   </div>
 </template>
