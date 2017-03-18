@@ -11,6 +11,7 @@ var express = require('express')
 var webpack = require('webpack')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = require('./webpack.dev.conf')
+var favicons = require('../src/assets/js/favicons-middleware.js');
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
@@ -25,6 +26,7 @@ var app = express()
 var apiRoutes = require('../api/apiroutes.js')
 
 app.use('/api', apiRoutes);
+app.use(favicons('../favicon.ico'))
 
 var compiler = webpack(webpackConfig)
 
