@@ -8,6 +8,7 @@ var daily = require('./mockdata/daily.json');
 var vocality = require('./mockdata/vocality.json');
 var travels = require('./mockdata/travels.json');
 var essay = require('./mockdata/essay.json');
+var personal = require('./mockdata/personal.json');
 
 
 apiRoutes.get('/home', function (req, res) {

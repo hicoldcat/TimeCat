@@ -1,5 +1,8 @@
+// 分发actions，页面的action同意dispatch到此进行逻辑处理
+
 import * as types from './mutation-types.js'
 
+// 首页各个模块跳转
 export const  updatePage = ({commit},payload) => {
   if(payload.nextPage && payload.nextTitle){
     commit(types.UPDATE_NEXT_PAGE,{
@@ -11,6 +14,7 @@ export const  updatePage = ({commit},payload) => {
   }
 }
 
+// 点击用户头像进入个人页面
 export const  goPersonalPages = ({commit},payload) => {
   if(payload.userId){
     commit(types.GO_Personal_Pages,{
