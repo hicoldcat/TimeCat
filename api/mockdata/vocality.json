@@ -11,8 +11,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170106/20170106171217388.jpg",
       "singer":"张碧晨",
       "songname":"时间有泪",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1490055600000"
     },
     {
@@ -25,8 +25,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20160530/20160530190530186681.jpg",
       "singer":"林志炫",
       "songname":"御龙铭千古",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1493055500000"
     },
     {
@@ -39,8 +39,8 @@
       "singer":"汪峰",
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20160426/20160426113231414.jpg",
       "songname":"春天里",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1475164800000"
     },
     {
@@ -53,8 +53,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20161019/20161019112334107316.jpg",
       "singer":"李健",
       "songname":"异乡人",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1485914400000"
     },
     {
@@ -67,8 +67,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20160612/20160612182117928150.jpg",
       "singer":"狮子合唱团",
       "songname":"听不到",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1493355700000"
     },
     {
@@ -81,8 +81,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170111/20170111104600449.jpg",
       "singer":"张杰",
       "songname":"突然想爱你",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1493155740000"
     },
     {
@@ -95,8 +95,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170109/20170109113028943.jpg",
       "singer":"林忆莲",
       "songname":"蓝莲花",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1493355640000"
     },
     {
@@ -109,8 +109,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170110/20170110174433260.jpg",
       "singer":"迪玛希",
       "songname":"Daididau",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1423455640000"
     },
     {
@@ -123,8 +123,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170110/20170110180849472.jpg",
       "singer":"袁娅维",
       "songname":"Golden",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1423355450000"
     },
     {
@@ -137,8 +137,8 @@
       "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170205/20170205183509587.jpg",
       "singer":"赵雷",
       "songname":"成都",
-      "themeid": "daily",
-      "module": "daily",
+      "themeid": "music",
+      "module": "vocality",
       "createtime":"1465354670000"
     }
   ]

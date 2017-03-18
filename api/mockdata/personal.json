@@ -13,7 +13,7 @@
         "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
         "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_QCivaWCX.jpg",
         "desc": "一花一世界，一鸟一天堂",
-        "themeid": "daily",
+        "themeid": "info",
         "module": "daily",
         "createtime":"1475164800000"
       },
@@ -27,8 +27,8 @@
         "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170106/20170106171217388.jpg",
         "singer":"张碧晨",
         "songname":"时间有泪",
-        "themeid": "daily",
-        "module": "daily",
+        "themeid": "music",
+        "module": "vocality",
         "createtime":"1490055600000"
       },
       {
@@ -37,8 +37,8 @@
         "nickname": "李留白",
         "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
         "pic": "http://p3.wmpic.me/article/2017/02/17/1487312780_KWdvxsti.jpg",
-        "themeid": "daily",
-        "module": "daily",
+        "themeid": "article",
+        "module": "essay",
         "title":"将灵魂的虔诚，植入一朵莲荷",
         "content":"",
         "createtime":"1493355640000"
@@ -49,8 +49,8 @@
         "nickname": "李留白",
         "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
         "pic": "http://p3.wmpic.me/article/2017/02/17/1487312780_KLVpntpo.jpg",
-        "themeid": "daily",
-        "module": "daily",
+        "themeid": "trip",
+        "module": "travels",
         "destination":"山东",
         "title":"雄山灵水圣人——我和齐鲁情未了",
         "content":"",
