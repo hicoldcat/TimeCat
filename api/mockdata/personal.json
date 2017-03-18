@@ -1,0 +1,61 @@
+{
+  "errno": 0,
+  "data": {
+    "userid":"u9001",
+    "nickname": "李留白",
+    "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
+    "followcount": 920,
+    "contentlist": [
+      {
+        "id":1001,
+        "userid":"u9001",
+        "nickname": "李留白",
+        "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
+        "pic": "http://p3.wmpic.me/article/2015/12/15/1450149335_QCivaWCX.jpg",
+        "desc": "一花一世界，一鸟一天堂",
+        "themeid": "daily",
+        "module": "daily",
+        "createtime":"1475164800000"
+      },
+      {
+        "id":1003,
+        "userid":"u9001",
+        "nickname": "李留白",
+        "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
+        "pic": "http://p3.wmpic.me/article/2017/03/07/1488868988_oeWjKIyl.jpg",
+        "musicurl":"http://fs.open.kugou.com/886bae70fad3b51b29b69b0886c91c5d/58c10e40/G094/M03/1D/01/PpQEAFi6f4OAPYPSAE5cJ7mN9yk814.mp3",
+        "imgurl":"http://singerimg.kugou.com/uploadpic/softhead/100/20170106/20170106171217388.jpg",
+        "singer":"张碧晨",
+        "songname":"时间有泪",
+        "themeid": "daily",
+        "module": "daily",
+        "createtime":"1490055600000"
+      },
+      {
+        "id":1007,
+        "userid":"u9001",
+        "nickname": "李留白",
+        "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
+        "pic": "http://p3.wmpic.me/article/2017/02/17/1487312780_KWdvxsti.jpg",
+        "themeid": "daily",
+        "module": "daily",
+        "title":"将灵魂的虔诚，植入一朵莲荷",
+        "content":"",
+        "createtime":"1493355640000"
+      },
+      {
+        "id":1005,
+        "userid":"u9001",
+        "nickname": "李留白",
+        "avatar": "http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg",
+        "pic": "http://p3.wmpic.me/article/2017/02/17/1487312780_KLVpntpo.jpg",
+        "themeid": "daily",
+        "module": "daily",
+        "destination":"山东",
+        "title":"雄山灵水圣人——我和齐鲁情未了",
+        "content":"",
+        "createtime":"1493355700000"
+      }
+    ]
+  }
+}

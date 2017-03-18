@@ -32,4 +32,8 @@ apiRoutes.get('/essay', function (req, res) {
 	res.json(essay);
 });
 
+apiRoutes.get('/personal', function (req, res) {
+	res.json(personal);
+});
+
 module.exports = apiRoutes;
