@@ -17,8 +17,13 @@ export const  updatePage = ({commit},payload) => {
 // 点击用户头像进入个人页面
 export const  goPersonalPages = ({commit},payload) => {
   if(payload.userId){
-    commit(types.GO_Personal_Pages,{
+    commit(types.GO_PERSONAL_PAGES,{
       userId:payload.userId
     })
   }
+}
+
+// 切换关注用户
+export const  toggleFollowPerson = ({commit}) => {
+  commit(types.TOGGLE_FOLLOW_PERSON)
 }

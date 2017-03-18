@@ -1,12 +1,12 @@
 <template lang="html">
   <header class="header">
-    <div class="menu">
+    <div class="menu" @click="goBack">
       <i class=" icon-arrow_lift"></i>
     </div>
     <div class="nickname">
       <h1>{{nickname}}</h1>
     </div>
-    <div class="share">
+    <div class="share" @click="sharePerson">
       <i class="icon-share2"></i>
     </div>
   </header>
@@ -20,6 +20,14 @@ export default {
   props: {
     nickname: {
       type: String
+    }
+  },
+  methods: {
+    goBack () {
+      VueRouter.go(-1)
+    },
+    sharePerson () {
+      alert("分享功能待完善！")
     }
   }
 }

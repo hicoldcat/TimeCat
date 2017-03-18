@@ -12,15 +12,15 @@
           </div>
         </div>
         <div class="follow">
-          <div class="menu">
-            <i class="icon-checkbox-unchecked"></i>
+          <div class="menu" @click="toggleFollowPerson(user.isfollow)">
+            <i :class=" isfollow == true ? 'icon-checkbox-checked' : 'icon-checkbox-unchecked'"></i>
           </div>
             <div class="count">
-              {{'Follower：'+user.followcount}}
+              {{'Follower：'+ followcount}}
             </div>
         </div>
       </div>
-      <div class="total">{{'Total Card : '+listlength}}</div>
+      <div class="total">{{'Total Cards : '+listlength}}</div>
       <div class="content-box">
         <template v-for="item in user.contentlist">
           <div v-if="item.themeid === 'info'" class="item">
@@ -51,6 +51,8 @@ import Trip from 'components/trip/Trip.vue'
 
 import PersonalHeader from 'components/personalheader/PersonalHeader.vue'
 
+import { mapGetters, mapActions } from 'vuex'
+
 const ERR_OK = 0
 
 export default {
@@ -63,7 +65,6 @@ export default {
   created() {
     axios.get('/api/personal').then((res) => {
       res = res.data
-      console.info(res)
       if (res.errno === ERR_OK) {
         this.user = res.data
         this.listlength = res.data.contentlist.length
@@ -72,6 +73,18 @@ export default {
       console.warn(error)
     })
   },
+  methods: {
+    toggleFollowPerson () {
+      this.$nextTick(function () {
+        this.$store.dispatch('toggleFollowPerson',{userId:this.user.userid})
+      })
+    }
+  },
+  // mock下模拟的数据，正常情况下不需要computed下isfollow和followcount,而是真实的数据库数据
+  computed: mapGetters({
+    isfollow: 'isfollow',
+    followcount: 'followcount'
+  }),
   components: {
     "personal-header": PersonalHeader,
     "info": Info,
