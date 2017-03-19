@@ -11,7 +11,7 @@
     </div>
     <div class="owner" @click="goPersonalPages(userid)">
       <div class="avatar">
-        <img :src="avatar" alt="">
+        <img :src="avatar" alt="" @error="setErrorAvatar">
       </div>
       <div class="name">
         {{nickname}}
@@ -42,6 +42,12 @@ export default {
         this.$store.dispatch('goPersonalPages',{userId:data})
       }
     },
+    setErrorAvatar () {
+      this.$nextTick(function () {
+        let errorImgUrl = require('../../assets/image/img_error_avatar.png')
+        this.avatar = errorImgUrl
+     })
+    }
   }
 }
 </script>
