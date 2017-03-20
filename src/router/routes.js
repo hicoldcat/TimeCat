@@ -12,10 +12,12 @@ import Travels from 'pages/travels/Travels'
 import Vocality from 'pages/vocality/Vocality'
 import Essay from 'pages/essay/Essay'
 import Personal from 'pages/personal/Personal'
+import ChooseTheme from 'pages/choosetheme/ChooseTheme'
 
 // 注册插件
 Vue.use(VueRouter)
 Vue.use(Vuex)
+Vue.use(iView)
 
 // 配置routes
 const routes = [
@@ -48,6 +50,11 @@ const routes = [
     path: '/personal',
     name: 'personal',
     component:Personal
+  },
+  {
+    path: '/choosetheme',
+    name: 'choosetheme',
+    component:ChooseTheme
   },
   {
     path: '/',

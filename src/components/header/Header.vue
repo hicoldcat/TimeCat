@@ -6,7 +6,7 @@
     <div class="title">
       <h1>{{headertitle}}</h1>
     </div>
-    <div class="write">
+    <div class="write" @click="goChooseThemePage">
       <i class="icon-quill"></i>
     </div>
   </header>
@@ -32,6 +32,9 @@ export default {
     goNextPage () {
       this.$store.dispatch('updatePage',{nextPage:this.nextPage,nextTitle:this.nextTitle})
     },
+    goChooseThemePage () {
+      VueRouter.push({ path: '/choosetheme' })
+    }
   }
 }
 </script>
