@@ -6,7 +6,7 @@ TimeCat
 技术栈
 ------
 
-前端：Vue2 + Vuex + Vue-Router2 + Axios + Webpack + ES6/7 + Less
+前端：Vue2 + Vuex + Vue-Router2 + Axios + Webpack + ES6/7 + Less + ElementUI
 
 项目安装
 --------
@@ -123,7 +123,7 @@ npm run build
 贡献
 ----
 
-> 由于本人前端小菜鸟一枚，如果有任何的问题，欢迎给我提issue
+> 本人前端小菜鸟一枚，如果有任何的问题，欢迎给我提issue
 >
 > 如果此项目对你有帮助，可以给个star哦
 

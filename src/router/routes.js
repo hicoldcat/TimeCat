@@ -17,7 +17,6 @@ import ChooseTheme from 'pages/choosetheme/ChooseTheme'
 // 注册插件
 Vue.use(VueRouter)
 Vue.use(Vuex)
-Vue.use(iView)
 
 // 配置routes
 const routes = [
