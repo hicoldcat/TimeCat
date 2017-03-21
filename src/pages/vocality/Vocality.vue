@@ -4,6 +4,7 @@
     <div class="music-container" v-for="item in musiclist">
       <music :music="item" class="music"></music>
     </div>
+    <switch-button></switch-button>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import axios from 'axios'
 
 import Header from 'components/header/Header.vue'
 import Music from 'components/music/Music.vue'
+import SwitchButton from 'components/switchbutton/SwitchButton.vue'
 
 const ERR_OK = 0
 
@@ -35,7 +37,8 @@ export default {
   },
   components: {
     "v-header": Header,
-    "music": Music
+    "music": Music,
+    "switch-button": SwitchButton
   }}
 </script>
 

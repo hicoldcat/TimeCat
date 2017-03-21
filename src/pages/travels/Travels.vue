@@ -4,6 +4,7 @@
     <div class="trip-container" v-for="item in triplist">
       <trip :trip="item" class="trip"></trip>
     </div>
+    <switch-button></switch-button>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import axios from 'axios'
 
 import Header from 'components/header/Header.vue'
 import Trip from 'components/trip/Trip.vue'
+import SwitchButton from 'components/switchbutton/SwitchButton.vue'
 
 const ERR_OK = 0
 
@@ -35,7 +37,8 @@ export default {
   },
   components: {
     "v-header": Header,
-    "trip": Trip
+    "trip": Trip,
+    "switch-button": SwitchButton
   }}
 </script>
 

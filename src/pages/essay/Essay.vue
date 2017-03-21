@@ -4,6 +4,7 @@
     <div class="article-container" v-for="item in articlelist">
       <v-article :article="item" class="articleitem"></v-article>
     </div>
+    <switch-button></switch-button>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import axios from 'axios'
 
 import Header from 'components/header/Header.vue'
 import Article from 'components/article/Article.vue'
+import SwitchButton from 'components/switchbutton/SwitchButton.vue'
 
 const ERR_OK = 0
 
@@ -35,7 +37,8 @@ export default {
   },
   components: {
     "v-header": Header,
-    "v-article": Article
+    "v-article": Article,
+    "switch-button": SwitchButton
   }
 }
 </script>

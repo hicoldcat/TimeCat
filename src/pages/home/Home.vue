@@ -4,6 +4,7 @@
     <div class="info-container" v-for="item in homelist">
       <info :info="item" class="info"></info>
     </div>
+		<switch-button></switch-button>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import axios from 'axios'
 
 import Header from 'components/header/Header.vue'
 import Info from 'components/info/Info.vue'
+import SwitchButton from 'components/switchbutton/SwitchButton.vue'
 
 const ERR_OK = 0
 
@@ -35,7 +37,8 @@ export default {
   },
   components: {
     "v-header": Header,
-    "info": Info
+    "info": Info,
+    "switch-button": SwitchButton
   }
 }
 </script>
