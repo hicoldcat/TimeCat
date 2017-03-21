@@ -2,14 +2,16 @@ import * as types from './mutation-types.js'
 import VueRouter from '../router/routes.js'
 
 export default {
-  [types.UPDATE_NEXT_PAGE](state, {nextPage}) {
+  [types.UPDATE_NEXT_PAGE](state) {
+    if (state.pageIndex < state.pageArray.length -1) {
+      state.pageIndex ++
+    } else {
+      state.pageIndex = 0
+    }
     VueRouter.push({
-      path: '/' + nextPage
+      path: '/' + state.pageArray[state.pageIndex].routename
     })
-  },
 
-  [types.UPDATE_HEADER_TITLE](state, {nextTitle}) {
-    state.headerTitle = nextTitle
   },
 
   [types.GO_PERSONAL_PAGES](state, {userId}) {
