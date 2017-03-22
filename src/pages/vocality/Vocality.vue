@@ -1,6 +1,5 @@
 <template>
   <div class="vocality">
-    <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
     <div class="music-container" v-for="item in musiclist">
       <music :music="item" class="music"></music>
     </div>
@@ -20,8 +19,6 @@ const ERR_OK = 0
 export default {
   data () {
     return {
-      nextTitle: "字符留白",
-      nextPage:"essay",
       musiclist:[]
     }
   },
@@ -36,7 +33,6 @@ export default {
     })
   },
   components: {
-    "v-header": Header,
     "music": Music,
     "switch-button": SwitchButton
   }}

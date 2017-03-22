@@ -1,6 +1,5 @@
 <template>
   <div class="eassy">
-    <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
     <div class="article-container" v-for="item in articlelist">
       <v-article :article="item" class="articleitem"></v-article>
     </div>
@@ -20,8 +19,6 @@ const ERR_OK = 0
 export default {
   data () {
     return {
-      nextTitle: "半步留白",
-      nextPage:"travels",
       articlelist:[]
     }
   },
@@ -36,7 +33,6 @@ export default {
     })
   },
   components: {
-    "v-header": Header,
     "v-article": Article,
     "switch-button": SwitchButton
   }

@@ -1,6 +1,5 @@
 <template>
   <div class="travels">
-    <v-header :nextTitle="nextTitle" :nextPage="nextPage"></v-header>
     <div class="trip-container" v-for="item in triplist">
       <trip :trip="item" class="trip"></trip>
     </div>
@@ -11,7 +10,6 @@
 <script>
 import axios from 'axios'
 
-import Header from 'components/header/Header.vue'
 import Trip from 'components/trip/Trip.vue'
 import SwitchButton from 'components/switchbutton/SwitchButton.vue'
 
@@ -20,8 +18,6 @@ const ERR_OK = 0
 export default {
   data () {
     return {
-      nextTitle: "此处留白",
-      nextPage:"home",
       triplist:[]
     }
   },
@@ -36,7 +32,6 @@ export default {
     })
   },
   components: {
-    "v-header": Header,
     "trip": Trip,
     "switch-button": SwitchButton
   }}

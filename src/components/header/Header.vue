@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="menu" @click="goNextPage">
+    <div class="menu" @click="toggleSlideBar">
       <i class="icon-diamond"></i>
     </div>
     <div class="title">
@@ -17,20 +17,12 @@ import VueRouter from '../../router/routes.js'
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
-  props: {
-    nextTitle: {
-      type: String
-    },
-    nextPage: {
-      type: String
-    }
-  },
   computed: mapGetters({
     headertitle: 'headerTitle'
   }),
   methods: {
-    goNextPage () {
-      this.$store.dispatch('updatePage',{nextPage:this.nextPage,nextTitle:this.nextTitle})
+    toggleSlideBar () {
+      
     },
     goChooseThemePage () {
       VueRouter.push({ path: '/choosetheme' })
