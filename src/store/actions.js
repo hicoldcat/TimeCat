@@ -20,3 +20,8 @@ export const  goPersonalPages = ({commit},payload) => {
 export const  toggleFollowPerson = ({commit}) => {
   commit(types.TOGGLE_FOLLOW_PERSON)
 }
+
+// 切换侧边栏显示
+export const  toggleSlideBar = ({commit}) => {
+  commit(types.TOGGLE_SLIDE_BAR)
+}

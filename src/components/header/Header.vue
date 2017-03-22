@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="heade">
     <div class="menu" @click="toggleSlideBar">
       <i class="icon-diamond"></i>
     </div>
@@ -18,11 +18,11 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   computed: mapGetters({
-    headertitle: 'headerTitle'
+    headertitle: 'headerTitle',
   }),
   methods: {
     toggleSlideBar () {
-      
+      this.$store.dispatch('toggleSlideBar')
     },
     goChooseThemePage () {
       VueRouter.push({ path: '/choosetheme' })
@@ -37,8 +37,8 @@ export default {
   @title-font-size: 18px;
   @baseBorderColor:#3B3B3B;
 
-  .header {
-    position: relative;;
+  .heade {
+    position: fixed;
     display: flex;
     width: 100%;
     height: @header-height;
@@ -47,6 +47,9 @@ export default {
     line-height: @header-height;
     border-bottom: 1px solid @baseBorderColor;
     box-shadow: 0 2px 10px #D8D8D8;
+    top:0;
+    left: 0;
+    z-index: 10;
     .menu {
       flex: 0 0 @header-height;
       font-size: @icon-font-size;

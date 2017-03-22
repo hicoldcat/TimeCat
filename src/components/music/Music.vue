@@ -36,13 +36,16 @@ export default {
   width: 100%;
   background-color: #fff;
 
+
   .box {
     position: relative;
     width: 90%;
     background-color: @baseBackgroundColor;
     margin: 0 auto;
-    border: 1px solid @baseBorderColor;
+    border: 1px solid #d1dbe5;
     margin: 0 auto;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+    border-radius:4px;
   }
 }
 </style>

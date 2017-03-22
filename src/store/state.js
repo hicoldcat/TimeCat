@@ -8,6 +8,7 @@ const state = {
     {headerTitle: "字符留白", routename: "essay"},
     {headerTitle: "半步留白", routename: "travels"}
   ],
+  isSlideBarShow: false,
   isfollow: false ,   //mockx下临时模拟的数据，正常情况下没有该字段
   followcount:101   //mockx下临时模拟的数据，正常情况下没有该字段
 }

@@ -26,6 +26,10 @@ export default {
         state.followcount ++
     }
     state.isfollow = !state.isfollow
-  }
+  },
+
+  [types.TOGGLE_SLIDE_BAR](state) {
+    state.isSlideBarShow = !state.isSlideBarShow
+  },
 
 }
