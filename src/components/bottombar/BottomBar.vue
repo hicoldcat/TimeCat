@@ -9,7 +9,7 @@
       </div>
       <div class="plus">+</div>
     </div>
-    <div class="owner" @click="goPersonalPages(userid)">
+    <div class="owner" @click="goPersonalPages(userid,nickname)">
       <div class="avatar">
         <img :src="avatar" alt="" @error="setErrorAvatar">
       </div>
@@ -37,9 +37,10 @@ export default {
     }
   },
   methods: {
-    goPersonalPages (data) {
-      if (data) {
-        this.$store.dispatch('goPersonalPages',{userId:data})
+    goPersonalPages (uid,nickname) {
+      if (uid && nickname) {
+        this.$store.dispatch('goPersonalPages',{userId:uid})
+        this.$store.dispatch('toggleheader',{nickname:nickname})
       }
     },
     setErrorAvatar () {

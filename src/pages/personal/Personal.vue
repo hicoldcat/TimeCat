@@ -1,6 +1,5 @@
 <template>
   <div class="personal">
-    <personal-header :nickname="user.nickname"></personal-header>
     <div class="personal-container">
       <div class="personal-info">
         <div class="info">
@@ -49,7 +48,6 @@ import Music from 'components/music/Music.vue'
 import Article from 'components/article/Article.vue'
 import Trip from 'components/trip/Trip.vue'
 
-import PersonalHeader from 'components/personalheader/PersonalHeader.vue'
 
 import { mapGetters, mapActions } from 'vuex'
 
@@ -86,7 +84,6 @@ export default {
     followcount: 'followcount'
   }),
   components: {
-    "personal-header": PersonalHeader,
     "info": Info,
     "music": Music,
     "v-article": Article,

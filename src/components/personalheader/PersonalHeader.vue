@@ -1,5 +1,5 @@
 <template lang="html">
-  <header class="header">
+  <header class="personalheader">
     <div class="menu" @click="goBack">
       <i class=" icon-arrow_lift"></i>
     </div>
@@ -25,6 +25,7 @@ export default {
   methods: {
     goBack () {
       VueRouter.go(-1)
+      this.$store.dispatch('toggleheader')
     },
     sharePerson () {
       alert("分享功能待完善！")
@@ -39,8 +40,8 @@ export default {
 @title-font-size: 18px;
 @baseBorderColor:#3B3B3B;
 
-.header {
-  position: relative;;
+.personalheader {
+  position: fixed;
   display: flex;
   width: 100%;
   height: @header-height;
@@ -49,6 +50,9 @@ export default {
   line-height: @header-height;
   border-bottom: 1px solid @baseBorderColor;
   box-shadow: 0 2px 10px #D8D8D8;
+  top:0;
+  left: 0;
+  z-index: 10;
   .menu {
     flex: 0 0 @header-height;
     font-size: @icon-font-size;

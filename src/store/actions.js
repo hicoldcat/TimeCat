@@ -25,3 +25,16 @@ export const  toggleFollowPerson = ({commit}) => {
 export const  toggleSlideBar = ({commit}) => {
   commit(types.TOGGLE_SLIDE_BAR)
 }
+
+// 切换header
+export const  toggleheader = ({commit},payload) => {
+  if(payload){
+    commit(types.ADD_DETAIL_HEADER_NICKNAME,{
+      nickname:payload.nickname
+    })
+  } else {
+    commit(types.DELEATE_DETAIL_HEADER_NICKNAME)
+  }
+  commit(types.TOGGLE_HEADER)
+
+}

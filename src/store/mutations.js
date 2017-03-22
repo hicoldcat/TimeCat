@@ -32,4 +32,16 @@ export default {
     state.isSlideBarShow = !state.isSlideBarShow
   },
 
+  [types.TOGGLE_HEADER](state) {
+    state.isDetailHeader = !state.isDetailHeader
+  },
+
+  [types.ADD_DETAIL_HEADER_NICKNAME](state,{nickname}) {
+    state.detailHeaderNickName = nickname
+  },
+
+  [types.DELEATE_DETAIL_HEADER_NICKNAME](state) {
+    state.detailHeaderNickName = ''
+  }
+
 }
