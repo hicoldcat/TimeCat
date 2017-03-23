@@ -11,6 +11,8 @@ const state = {
   isSlideBarShow: false,
   isDetailHeader: false,
   detailHeaderNickName:'',
+  avatar:'http://p1.wmpic.me/article/2017/03/06/1488780213_usvFXYIl.jpg',
+  nickname:'李留白',
   isfollow: false ,   //mockx下临时模拟的数据，正常情况下没有该字段
   followcount:101   //mockx下临时模拟的数据，正常情况下没有该字段
 }
