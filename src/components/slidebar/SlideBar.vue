@@ -4,17 +4,17 @@
       <el-col :span="16" class="left" @click="toggleSlideBar">
         <div class="useravatar">
           <div class="avatar">
-            <img :src="avatar" alt="">
+            <img :src="personalInfo.avatar" alt="">
           </div>
           <div class="name">
-            {{nickname}}
+            {{personalInfo.nickname}}
           </div>
         </div>
-        <el-menu class="el-menu-vertical-demo">
+        <el-menu class="el-menu-vertical-demo" @select="handleSelect">
           <el-menu-item index="1"><i class="icon-user"></i><div class="navtext">个人</div></el-menu-item>
           <el-menu-item index="2"><i class="icon-eye"></i><div class="navtext">关注</div></el-menu-item>
-          <el-menu-item index="2"><i class="icon-bubbles3"></i><div class="navtext">消息</div></el-menu-item>
-          <el-menu-item index="3"><i class="icon-cog"></i><div class="navtext">设置</div></el-menu-item>
+          <el-menu-item index="3"><i class="icon-bubbles3"></i><div class="navtext">消息</div></el-menu-item>
+          <el-menu-item index="4"><i class="icon-cog"></i><div class="navtext">设置</div></el-menu-item>
         </el-menu>
       </el-col>
       <el-col :span="8" class="right" ><div @click="toggleSlideBar" class="rightEvent"></div></el-col>
@@ -27,12 +27,25 @@ import { mapGetters, mapState } from 'vuex'
 
 export default {
   computed: mapState({
-    avatar: 'avatar',
-    nickname: 'nickname'
+    personalInfo: 'personalInfo'
   }),
   methods: {
     toggleSlideBar () {
       this.$store.dispatch('toggleSlideBar')
+    },
+    handleSelect (data) {
+      let index = parseInt(data)
+      switch (index) {
+        case 1:
+          if (this.personalInfo.uid && this.personalInfo.nickname){
+            this.$store.dispatch('goPersonalPages',{userId:this.personalInfo.uid})
+            this.$store.dispatch('toggleheader',{nickname:this.personalInfo.nickname})
+            this.$store.dispatch('toggleSlideBar')
+          }
+          break;
+        default:
+
+      }
     }
   }
 }
