@@ -38,6 +38,7 @@ export default {
   },
   methods: {
     goPersonalPages (uid,nickname) {
+      if (this.$route.name == 'personal') return
       if (uid && nickname) {
         this.$store.dispatch('goPersonalPages',{userId:uid})
         this.$store.dispatch('toggleheader',{nickname:nickname})
