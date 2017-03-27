@@ -4,6 +4,7 @@
       <music :music="item" class="music"></music>
     </div>
     <switch-button></switch-button>
+    <v-player></v-player>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import axios from 'axios'
 import Header from 'components/header/Header.vue'
 import Music from 'components/music/Music.vue'
 import SwitchButton from 'components/switchbutton/SwitchButton.vue'
+import Player from 'components/player/Player.vue'
 
 const ERR_OK = 0
 
@@ -34,7 +36,8 @@ export default {
   },
   components: {
     "music": Music,
-    "switch-button": SwitchButton
+    "switch-button": SwitchButton,
+    "v-player": Player
   }}
 </script>
 

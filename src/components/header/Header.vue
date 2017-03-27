@@ -25,7 +25,7 @@ export default {
       this.$store.dispatch('toggleSlideBar')
     },
     goChooseThemePage () {
-      VueRouter.push({ path: '/choosetheme' })
+      // VueRouter.push({ path: '/choosetheme' })
     }
   }
 }

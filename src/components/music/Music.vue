@@ -2,7 +2,7 @@
   <div class="music">
     <div class="box">
       <pic-box :src="music.pic"></pic-box>
-      <music-bar :musicurl="music.musicurl" :imgurl="music.imgurl" :singer="music.singer" :songname="music.songname"></music-bar>
+      <music-bar :musicurl="music.musicurl" :imgurl="music.imgurl" :singer="music.singer" :songname="music.songname" ></music-bar>
       <bottom-bar :nickname="music.nickname" :avatar="music.avatar" :time="music.time" :userid="music.userid"></bottom-bar>
     </div>
   </div>
@@ -41,7 +41,6 @@ export default {
     position: relative;
     width: 90%;
     background-color: @baseBackgroundColor;
-    margin: 0 auto;
     border: 1px solid #d1dbe5;
     margin: 0 auto;
     box-shadow:0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);

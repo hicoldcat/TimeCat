@@ -8,7 +8,7 @@
         <div class="songname">{{songname}}</div>
         <div class="singer">{{singer}}</div>
       </div>
-      <div class="right">
+      <div class="right" @click="togglePlayerStatus(musicurl)">
         <i class="icon-play3"></i>
       </div>
     </div>
@@ -29,7 +29,12 @@ export default {
     },
     songname: {
       type: String
-    },
+    }
+  },
+  methods: {
+    togglePlayerStatus: function (url) {
+      this.$store.dispatch('togglePlayerStatus',{currentPlayerUrl:url})
+    }
   }
 }
 </script>

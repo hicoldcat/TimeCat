@@ -36,5 +36,13 @@ export const  toggleheader = ({commit},payload) => {
     commit(types.DELEATE_DETAIL_HEADER_NICKNAME)
   }
   commit(types.TOGGLE_HEADER)
+}
 
+// 切换音乐播放
+export const  togglePlayerStatus = ({commit},payload) => {
+  if (payload.currentPlayerUrl) {
+    commit(types.TOGGLE_PLAYER_STATUS,{
+      currentPlayerUrl:payload.currentPlayerUrl
+    })
+  }
 }

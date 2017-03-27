@@ -42,6 +42,15 @@ export default {
 
   [types.DELEATE_DETAIL_HEADER_NICKNAME](state) {
     state.detailHeaderNickName = ''
+  },
+
+  [types.TOGGLE_PLAYER_STATUS](state,{currentPlayerUrl}) {
+    if (!state.isAudioPlay) {
+      state.currentPlayerUrl = currentPlayerUrl
+      state.isAudioPlay = true
+    } else {
+      state.currentPlayerUrl = currentPlayerUrl
+    }
   }
 
 }
