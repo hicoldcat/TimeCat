@@ -1,6 +1,6 @@
 <template>
   <div class="pic">
-    <img :src="src" alt="" @error="setErrorImg">
+    <img :src="imgsrc" alt="" @error="setErrorImg">
   </div>
 </template>
 
@@ -10,6 +10,11 @@ export default {
   props: {
     src: {
       type: String
+    }
+  },
+  computed: {
+    imgsrc : function () {
+      return this.src
     }
   },
   methods: {
