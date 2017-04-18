@@ -1,5 +1,5 @@
 <template>
-  <div class="pic">
+  <div class="pic" @click="goDetailPage">
     <img :src="imgsrc" alt="" @error="setErrorImg">
   </div>
 </template>
@@ -9,6 +9,12 @@ import { mapGetters, mapActions } from 'vuex'
 export default {
   props: {
     src: {
+      type: String
+    },
+    id: {
+      type: Number
+    },
+    nickname: {
       type: String
     }
   },
@@ -23,7 +29,13 @@ export default {
         let errorImgUrl = require('../../assets/image/img_error_bg.jpg')
         this.src = errorImgUrl
      })
-    }
+   },
+   goDetailPage () {
+     if (this.id && this.nickname) {
+       this.$store.dispatch('goDetailPage',{id:this.id})
+       this.$store.dispatch('toggleheader',{nickname:this.nickname})
+     }
+   }
   }
 }
 </script>

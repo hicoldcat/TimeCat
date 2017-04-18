@@ -13,6 +13,7 @@ import Vocality from 'pages/vocality/Vocality'
 import Essay from 'pages/essay/Essay'
 import Personal from 'pages/personal/Personal'
 import ChooseTheme from 'pages/choosetheme/ChooseTheme'
+import Detail from 'pages/detail/Detail'
 
 // 注册插件
 Vue.use(VueRouter)
@@ -54,6 +55,11 @@ const routes = [
     path: '/choosetheme',
     name: 'choosetheme',
     component:ChooseTheme
+  },
+  {
+    path: '/detail',
+    name: 'detail',
+    component:Detail
   },
   {
     path: '/',

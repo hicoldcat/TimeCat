@@ -46,3 +46,12 @@ export const  togglePlayerStatus = ({commit},payload) => {
     })
   }
 }
+
+// 点击列表项进入详情页面
+export const  goDetailPage = ({commit},payload) => {
+  if(payload.id){
+    commit(types.GO_DETAIL_PAGES,{
+      id:payload.id
+    })
+  }
+}

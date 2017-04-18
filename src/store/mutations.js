@@ -51,6 +51,10 @@ export default {
     } else {
       state.currentPlayerUrl = currentPlayerUrl
     }
-  }
+  },
+
+  [types.GO_DETAIL_PAGES](state, {id}) {
+    VueRouter.push({ name: 'detail', params: { id: id }})
+  },
 
 }

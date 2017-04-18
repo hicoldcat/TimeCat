@@ -1,8 +1,8 @@
 <template>
 <div class="info">
   <div class="box">
-    <pic-box :src="info.pic"></pic-box>
-    <div class="desc">
+    <pic-box :src="info.pic" :id="info.id" :nickname="info.nickname"></pic-box>
+    <div class="desc" @click="goDetailPage(info)">
       {{info.desc}}
     </div>
     <bottom-bar :nickname="info.nickname" :avatar="info.avatar" :time="info.time" :userid="info.userid"></bottom-bar>
@@ -23,6 +23,12 @@ export default {
   components: {
     "bottom-bar": BottomBar,
     "pic-box":PicBox
+  },
+  methods: {
+    goDetailPage: function (info) {
+        this.$store.dispatch('goDetailPage',{id:info.id})
+        this.$store.dispatch('toggleheader',{nickname:info.nickname})
+    }
   }
 }
 </script>
