@@ -1,5 +1,5 @@
 <template>
-  <div class="pic" @click="goDetailPage">
+  <div class="pic" @click="goDetailPage(id,nickname)">
     <img :src="imgsrc" alt="" @error="setErrorImg">
   </div>
 </template>
@@ -30,10 +30,10 @@ export default {
         this.src = errorImgUrl
      })
    },
-   goDetailPage () {
-     if (this.id && this.nickname) {
-       this.$store.dispatch('goDetailPage',{id:this.id})
-       this.$store.dispatch('toggleheader',{nickname:this.nickname})
+   goDetailPage (id,nickname) {
+     if (id && nickname) {
+       this.$store.dispatch('goDetailPage',{id:id})
+       this.$store.dispatch('toggleheader',{nickname:nickname})
      }
    }
   }
