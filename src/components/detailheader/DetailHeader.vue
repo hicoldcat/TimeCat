@@ -1,5 +1,5 @@
 <template lang="html">
-  <header class="personalheader">
+  <header class="detailheader">
     <div class="menu" @click="goBack">
       <i class=" icon-arrow_lift"></i>
     </div>
@@ -40,7 +40,7 @@ export default {
 @title-font-size: 18px;
 @baseBorderColor:#3B3B3B;
 
-.personalheader {
+.detailheader {
   position: fixed;
   display: flex;
   width: 100%;
