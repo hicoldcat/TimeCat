@@ -1,10 +1,10 @@
 <template lang="html">
-  <div class="slideabr">
+  <div class="slidebar">
     <el-row class="container" >
       <el-col :span="16" class="left" @click="toggleSlideBar">
         <div class="useravatar">
           <div class="avatar">
-            <img :src="personalInfo.avatar" alt="">
+            <img :src="personalInfo.avatar" alt="" @error="setErrorAvatar" ref="sliderbaravatar">
           </div>
           <div class="name">
             {{personalInfo.nickname}}
@@ -46,6 +46,12 @@ export default {
         default:
 
       }
+    },
+    setErrorAvatar () {
+      this.$nextTick(function () {
+        let errorImgUrl = require('../../assets/image/img_error_avatar.png')
+        this.$refs.sliderbaravatar.src = errorImgUrl
+     })
     }
   }
 }
@@ -59,7 +65,7 @@ export default {
   font-style: normal;
 }
 
-  .slideabr {
+  .slidebar {
     position: fixed;
     left: 0;
     top: 0;
