@@ -18,16 +18,16 @@ export default {
       type: String
     }
   },
-  computed: {
-    imgsrc : function () {
-      return this.src
+  data () {
+    return {
+      imgsrc:this.src
     }
   },
   methods: {
     setErrorImg () {
       this.$nextTick(function () {
         let errorImgUrl = require('../../assets/image/img_error_bg.jpg')
-        this.src = errorImgUrl
+        this.imgsrc = errorImgUrl
      })
    },
    goDetailPage (id,nickname) {

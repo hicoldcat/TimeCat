@@ -11,7 +11,7 @@
     </div>
     <div class="owner" @click="goPersonalPages(userid,nickname)">
       <div class="avatar">
-        <img :src="avatar" alt="" @error="setErrorAvatar">
+        <img :src="avatarUrl" alt="" @error="setErrorAvatar">
       </div>
       <div class="name">
         {{nickname}}
@@ -36,6 +36,11 @@ export default {
       type: String
     }
   },
+  data () {
+    return {
+      avatarUrl: this.avatar
+    }
+  },
   methods: {
     goPersonalPages (uid,nickname) {
       if (this.$route.name !== 'personal'){
@@ -48,7 +53,7 @@ export default {
     setErrorAvatar () {
       this.$nextTick(function () {
         let errorImgUrl = require('../../assets/image/img_error_avatar.png')
-        this.avatar = errorImgUrl
+        this.avatarUrl = errorImgUrl
      })
     }
   }
