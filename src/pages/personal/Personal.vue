@@ -4,7 +4,7 @@
       <div class="personal-info">
         <div class="info">
           <div class="avatar">
-            <img :src="user.avatar" alt="">
+            <img :src="user.avatar" alt="" @error="setErrorAvatar">
           </div>
           <div class="name">
             {{user.nickname}}
@@ -76,6 +76,12 @@ export default {
       this.$nextTick(function () {
         this.$store.dispatch('toggleFollowPerson',{userId:this.user.userid})
       })
+    },
+    setErrorAvatar () {
+      this.$nextTick(function () {
+        let errorImgUrl = require('../../assets/image/img_error_avatar.png')
+        this.user.avatar = errorImgUrl
+     })
     }
   },
   // mock下模拟的数据，正常情况下不需要computed下isfollow和followcount,而是真实的数据库数据
