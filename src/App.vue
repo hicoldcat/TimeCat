@@ -3,7 +3,7 @@
 		<v-header v-show="!isDetailHeader"></v-header>
 		<detail-header :nickname="detailHeaderNickName"  v-show="isDetailHeader"></detail-header>
 		<router-view class="content"></router-view>
-		<slide-bar v-show="isSlideBarShow"></slide-bar>
+		<slide-bar></slide-bar>
 	</div>
 </template>
 
@@ -21,7 +21,6 @@ import SlideBar from 'components/slidebar/SlideBar.vue'
 			}
 		},
 		computed: mapGetters({
-	    isSlideBarShow: 'isSlideBarShow',
 			isDetailHeader: 'isDetailHeader',
 			detailHeaderNickName: 'detailHeaderNickName'
 	  }),

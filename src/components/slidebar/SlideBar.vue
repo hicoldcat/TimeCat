@@ -1,6 +1,6 @@
 <template lang="html">
-  <div class="slidebar">
-    <el-row class="container" >
+  <div class="slidebar" v-if="isSlideBarShow">
+    <el-row class="container">
       <el-col :span="16" class="left" @click="toggleSlideBar">
         <div class="useravatar">
           <div class="avatar">
@@ -26,9 +26,14 @@
 import { mapGetters, mapState } from 'vuex'
 
 export default {
-  computed: mapState({
-    personalInfo: 'personalInfo'
-  }),
+  computed: {
+    ...mapState({
+      personalInfo: 'personalInfo'
+    }),
+    ...mapGetters({
+	    isSlideBarShow: 'isSlideBarShow',
+	  }),
+  },
   methods: {
     toggleSlideBar () {
       this.$store.dispatch('toggleSlideBar')
@@ -58,12 +63,12 @@ export default {
 </script>
 
 <style lang="less">
-@font-face {
-  font-family: 'fangzheng';
-  src:  url('../../../static/fonts/fangzheng.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'fangzheng';
+    src:  url('../../../static/fonts/fangzheng.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
 
   .slidebar {
     position: fixed;
@@ -73,6 +78,10 @@ export default {
     height: 100%;
     z-index: 50;
     font-family: fangzheng;
+    animation: slidetoright .5s;
+    -moz-animation: slidetoright .5s;	/* Firefox */
+    -webkit-animation: slidetoright .5s;	/* Safari 和 Chrome */
+    -o-animation: slidetoright .5s;
 
     .container{
       height: 100%;
@@ -141,4 +150,25 @@ export default {
       }
     }
   }
+
+  @keyframes slidetoright{
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+  @-moz-keyframes slidetoright{
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+  @-webkit-keyframes slidetoright {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+  @-o-keyframes slidetoright{
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
 </style>
