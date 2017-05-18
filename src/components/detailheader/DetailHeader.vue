@@ -48,7 +48,6 @@ export default {
   background: #fff;
   text-align: center;
   line-height: @header-height;
-  border-bottom: 1px solid @baseBorderColor;
   box-shadow: 0 2px 10px #D8D8D8;
   top:0;
   left: 0;
