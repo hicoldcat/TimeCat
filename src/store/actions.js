@@ -55,3 +55,8 @@ export const  goDetailPage = ({commit},payload) => {
     })
   }
 }
+
+// 点击列表项进入详情页面
+export const  toggleLove = ({commit}) => {
+  commit(types.TOGGLE_LOVE)
+}
