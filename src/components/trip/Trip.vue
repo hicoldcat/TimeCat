@@ -43,9 +43,11 @@ export default {
           width: 90%;
           background-color: #fff;
           margin: 0 auto;
-          border: 1px solid #d1dbe5;
+          // border: 1px solid #d1dbe5;
           margin: 0 auto;
-          box-shadow:0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+          // box-shadow:0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+          box-shadow: 0 0 30px -7px rgba(0,0,0,.3);
+          padding: 5px 0;
           border-radius:4px;
 
           .center {
